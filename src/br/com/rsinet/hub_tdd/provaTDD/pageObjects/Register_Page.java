@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Register_Page {
 	public static WebElement element = null;
-
+// definindo os atributos
 	public static WebElement username(WebElement driver) {
 		element = driver.findElement(By.name("usernameRegisterPage"));
 		return element;
