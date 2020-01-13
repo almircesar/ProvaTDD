@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13889" started-at="2020-01-13T03:01:36Z" finished-at="2020-01-13T03:01:50Z">
+  <suite name="Default suite" duration-ms="19479" started-at="2020-01-13T16:23:18Z" finished-at="2020-01-13T16:23:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13889" started-at="2020-01-13T03:01:36Z" finished-at="2020-01-13T03:01:50Z">
+    <test name="Default test" duration-ms="19479" started-at="2020-01-13T16:23:18Z" finished-at="2020-01-13T16:23:37Z">
       <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.POM_TC">
-        <test-method status="PASS" signature="loga()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.POM_TC@36d4b5c]" name="loga" duration-ms="13875" started-at="2020-01-13T00:01:36Z" finished-at="2020-01-13T00:01:50Z">
+        <test-method status="PASS" signature="loga()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.POM_TC@36d4b5c]" name="loga" duration-ms="19460" started-at="2020-01-13T13:23:18Z" finished-at="2020-01-13T13:23:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loga -->

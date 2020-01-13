@@ -6,9 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import br.com.rsinet.hub_tdd.provaTDD.pageActions.Login_Action;
+import br.com.rsinet.hub_tdd.provaTDD.pageActions.Home_Action;
 import br.com.rsinet.hub_tdd.provaTDD.pageActions.Register_Action;
-import br.com.rsinet.hub_tdd.provaTDD.pageActions.SingIn_Action;
 
 public class POM_TC {
 
@@ -19,23 +18,23 @@ public class POM_TC {
 
 		driver = new ChromeDriver();
 
-		driver.get("https://www.advantageonlineshopping.com/#/");
-		
+		driver.get("https://www.advantageonlineshopping.com/");
+
 		driver.manage().window().maximize();
-		
+
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-		SingIn_Action.logar(driver);
-		
+		Home_Action.logar(driver);
+
 		System.out.println("clickou no user com sucesso");
-		
-		Login_Action.clickarregistro(driver);
-		
+
 		Register_Action.cadastroinf(driver);
 		
+		System.out.println("Cadastro feito com sucesso");
+		
+		Home_Action.procurar(driver);
+		
+		
 	//	driver.quit();
-		
-		
-
 	}
 }

@@ -15,7 +15,13 @@ public class Home_Page {
 	}
 		public static WebElement BotaoSearch( WebDriver driver) {
 			//encontra o botão Search
-			driver.findElement(By.id("menuSearch")).click();
+			element = driver.findElement(By.id("menuSearch"));
 			return element;
 }
+		public static WebElement pesquisaSearch(WebDriver driver) {
+			element = driver.findElement(By.id("autoComplete"));
+			return element;
+			
+			
+		}
 }

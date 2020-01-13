@@ -47,10 +47,10 @@ public class Register_Page {
 		return element;
 	}
 
-	public static WebElement paisescolhido(WebDriver driver) {
+	public static Select paisescolhido(WebDriver driver) {
 		element = driver.findElement(By.name("countryListboxRegisterPage"));
 		Select oSelect = new Select(element);
-		return (WebElement) oSelect;
+		return oSelect;
 
 	}
 
