@@ -21,7 +21,25 @@ public class Home_Page {
 		public static WebElement pesquisaSearch(WebDriver driver) {
 			element = driver.findElement(By.id("autoComplete"));
 			return element;
+		
+		}
+		
+		public static WebElement escolherprod(WebDriver driver) {
+			element = driver.findElement(By.linkText("HP ElitePad 1000 G2 Tablet"));
+			return element;
 			
 			
 		}
+		public static WebElement  produto(WebDriver driver) {
+			element = driver.findElement(By.className("ng-scope"));
+			return element;
+			
+		}
+		public static WebElement  fechasearch(WebDriver driver) {
+			element = driver.findElement(By.xpath("//*[@id=\"search\"]/div/div/img"));
+			return element;
+		
+		
+		
+}
 }

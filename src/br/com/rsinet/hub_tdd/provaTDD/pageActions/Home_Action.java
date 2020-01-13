@@ -16,9 +16,5 @@ public class Home_Action {
 		Login_Page.botaoregister(driver).sendKeys(Keys.ENTER);
 
 		}
-	public static void procurar(WebDriver driver) {
-		Home_Page.BotaoSearch(driver).click();
-		Home_Page.pesquisaSearch(driver).sendKeys("tablet");	
-		Home_Page.pesquisaSearch(driver).sendKeys(Keys.ENTER);
-	}
+	
 }
