@@ -2,20 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14406" started-at="2020-01-13T18:43:09Z" finished-at="2020-01-13T18:43:23Z">
+  <suite name="Default suite" duration-ms="18971" started-at="2020-01-14T16:50:29Z" finished-at="2020-01-14T16:50:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14406" started-at="2020-01-13T18:43:09Z" finished-at="2020-01-13T18:43:23Z">
-      <class name="br.com.rsinet.hub_tdd.provaTDD.pageActions.TestePesquisa">
-        <test-method status="PASS" signature="iniciaNavegadorESite()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.pageActions.TestePesquisa@5c7fa833]" name="iniciaNavegadorESite" is-config="true" duration-ms="11956" started-at="2020-01-13T15:43:09Z" finished-at="2020-01-13T15:43:21Z">
+    <test name="Default test" duration-ms="18971" started-at="2020-01-14T16:50:29Z" finished-at="2020-01-14T16:50:48Z">
+      <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.Teste_cadastro">
+        <test-method status="PASS" signature="iniciaNavegadorESite()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Teste_cadastro@475530b9]" name="iniciaNavegadorESite" is-config="true" duration-ms="11776" started-at="2020-01-14T13:50:29Z" finished-at="2020-01-14T13:50:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciaNavegadorESite -->
-        <test-method status="PASS" signature="Pesquisan()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.pageActions.TestePesquisa@5c7fa833]" name="Pesquisan" duration-ms="2421" started-at="2020-01-13T15:43:21Z" finished-at="2020-01-13T15:43:23Z">
+        <test-method status="PASS" signature="loga()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Teste_cadastro@475530b9]" name="loga" duration-ms="6455" started-at="2020-01-14T13:50:41Z" finished-at="2020-01-14T13:50:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Pesquisan -->
-      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.pageActions.TestePesquisa -->
+        </test-method> <!-- loga -->
+        <test-method status="PASS" signature="encerraNavegador()[pri:0, instance:br.com.rsinet.hub_tdd.provaTDD.automationFramework.Teste_cadastro@475530b9]" name="encerraNavegador" is-config="true" duration-ms="725" started-at="2020-01-14T13:50:47Z" finished-at="2020-01-14T13:50:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- encerraNavegador -->
+      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.Teste_cadastro -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

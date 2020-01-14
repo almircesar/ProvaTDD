@@ -7,8 +7,8 @@ import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Register_Page;
 public class Register_Action {
 	public static void cadastroinf(WebDriver driver) {
 		
-		Register_Page.username(driver).sendKeys("Ltr3cc23");
-		Register_Page.email(driver).sendKeys("lilala82@hotmail.com");
+		Register_Page.username(driver).sendKeys("laripsax");
+		Register_Page.email(driver).sendKeys("lilala2@hotmail.com");
 		Register_Page.senha(driver).sendKeys("Garrafa889");
 		Register_Page.confirmacaoSenha(driver).sendKeys("Garrafa889");
 		Register_Page.Primeironome(driver).sendKeys("miguel");

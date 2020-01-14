@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="br.com.rsinet.hub_tdd.provaTDD.pageActions.TestePesquisa">
+      <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.TestePesquisa">
         <methods>
-          <include name="Pesquisan"/>
           <include name="iniciaNavegadorESite"/>
+          <include name="Pesquisan"/>
         </methods>
-      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.pageActions.TestePesquisa -->
+      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.TestePesquisa -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

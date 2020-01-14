@@ -11,7 +11,8 @@ import org.testng.annotations.Test;
 import br.com.rsinet.hub_tdd.provaTDD.pageActions.Home_Action;
 import br.com.rsinet.hub_tdd.provaTDD.pageActions.Register_Action;
 
-public class POM_TC {
+public class Teste_cadastro {
+	
 	private static WebDriver driver = null;
 	
 	@BeforeTest
@@ -39,14 +40,8 @@ public class POM_TC {
 	Register_Action.cadastroinf(driver);
 		
 	System.out.println("Cadastro feito com sucesso");
-		
+	
+	
+	
 	}
-//teste pra fazer o search	
-//	@Test
-//	public void Pesquisa() {
-//	
-//	Home_Action.procurar(driver);
-	
-//}
-	
 }

@@ -15,7 +15,7 @@ public class Home_Page {
 	}
 		public static WebElement BotaoSearch( WebDriver driver) {
 			//encontra o botão Search
-			element = driver.findElement(By.id("menuSearch"));
+			element = driver.findElement(By.xpath("//*[@id=\"menuSearch\"]"));
 			return element;
 }
 		public static WebElement pesquisaSearch(WebDriver driver) {
