@@ -5,41 +5,48 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class Home_Page {
-		
-		private static WebElement element = null;
-		
-		public static WebElement botaoUser( WebDriver driver) {
-			//encontra o botão user
-			element = driver.findElement(By.id("menuUser"));
-			return element;
+
+	private static WebElement element = null;
+
+	public static WebElement botaoUser(WebDriver driver) {
+		// encontra o botão user
+		element = driver.findElement(By.id("menuUser"));
+		return element;
 	}
-		public static WebElement BotaoSearch( WebDriver driver) {
-			//encontra o botão Search
-			element = driver.findElement(By.xpath("//*[@id=\"menuSearch\"]"));
-			return element;
+
+	public static WebElement BotaoSearch(WebDriver driver) {
+		// encontra o botão Search
+		element = driver.findElement(By.xpath("//*[@id=\"menuSearch\"]"));
+		return element;
+	}
+
+	public static WebElement pesquisaSearch(WebDriver driver) {
+		element = driver.findElement(By.id("autoComplete"));
+		return element;
+
+	}
+
+	public static WebElement escolhertablet(WebDriver driver) {
+		element = driver.findElement(By.linkText("LOGITECH G502 PROTEUS CORE"));
+		return element;
+
+	}
+
+public static WebElement escolhermouser(WebDriver driver) {
+	element = driver.findElement(By.linkText("Logitech G502 Proteus Core"));
+	return element;
+	
 }
-		public static WebElement pesquisaSearch(WebDriver driver) {
-			element = driver.findElement(By.id("autoComplete"));
-			return element;
-		
-		}
-		
-		public static WebElement escolherprod(WebDriver driver) {
-			element = driver.findElement(By.linkText("HP ElitePad 1000 G2 Tablet"));
-			return element;
-			
-			
-		}
-		public static WebElement  produto(WebDriver driver) {
-			element = driver.findElement(By.className("ng-scope"));
-			return element;
-			
-		}
-		public static WebElement  fechasearch(WebDriver driver) {
-			element = driver.findElement(By.xpath("//*[@id=\"search\"]/div/div/img"));
-			return element;
-		
-		
-		
-}
+
+	public static WebElement produto(WebDriver driver) {
+		element = driver.findElement(By.className("ng-scope"));
+		return element;
+
+	}
+
+	public static WebElement fechasearch(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"search\"]/div/div/img"));
+		return element;
+
+	}
 }

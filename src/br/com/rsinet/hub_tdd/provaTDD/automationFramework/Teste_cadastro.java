@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -27,6 +28,8 @@ public class Teste_cadastro {
     @AfterTest
     public void encerraNavegador() {
         driver.quit();
+        Reporter.log("ChromeDriver fechado com sucesso.");
+        Reporter.log("Teste concluído com sucesso");
     }
 
 	@Test
@@ -35,13 +38,9 @@ public class Teste_cadastro {
 
 	Home_Action.logar(driver);
 
-	System.out.println("clickou no user com sucesso");
-
 	Register_Action.cadastroinf(driver);
-		
-	System.out.println("Cadastro feito com sucesso");
 	
-	
+	Reporter.log("cadastrado com sucesso");
 	
 	}
 }
