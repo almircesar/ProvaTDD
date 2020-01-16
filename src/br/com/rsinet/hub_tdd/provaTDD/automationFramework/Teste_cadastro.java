@@ -26,10 +26,10 @@ public class Teste_cadastro {
     }
 
     @AfterTest
-    public void encerraNavegador() {
-        driver.quit();
-        Reporter.log("ChromeDriver fechado com sucesso.");
-        Reporter.log("Teste concluído com sucesso");
+   public void encerraNavegador() {
+       driver.quit();
+       Reporter.log("ChromeDriver fechado com sucesso.");
+       Reporter.log("Teste concluído com sucesso");
     }
 
 	@Test
@@ -43,4 +43,5 @@ public class Teste_cadastro {
 	Reporter.log("cadastrado com sucesso");
 	
 	}
+	
 }

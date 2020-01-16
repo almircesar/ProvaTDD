@@ -54,3 +54,17 @@
 2020-01-15 15:09:30,841 INFO  [Classe de pesquisa] da um tempo 
 2020-01-15 15:09:32,812 INFO  [Classe de pesquisa] escolher um produto especifico 
 2020-01-15 15:09:33,525 INFO  [Classe de pesquisa] sai do teste 
+2020-01-16 13:09:44,760 INFO  [Classe de pesquisa] inicia o driver,abre o site e maximiza a tela 
+2020-01-16 13:09:58,118 INFO  [Classe de pesquisa] clica no search 
+2020-01-16 13:09:59,593 INFO  [Classe de pesquisa] pesquisa o conteudo do excel 
+2020-01-16 13:09:59,755 INFO  [Classe de pesquisa] clica pra pesquisar o conteudo digitado 
+2020-01-16 13:09:59,767 INFO  [Classe de pesquisa] da um tempo 
+2020-01-16 13:10:01,572 INFO  [Classe de pesquisa] escolher um produto especifico 
+2020-01-16 13:10:02,269 INFO  [Classe de pesquisa] sai do teste 
+2020-01-16 13:10:12,078 INFO  [Classe de pesquisa] inicia o driver,abre o site e maximiza a tela 
+2020-01-16 13:10:25,393 INFO  [Classe de pesquisa] clica no search 
+2020-01-16 13:10:25,859 INFO  [Classe de pesquisa] pesquisa o conteudo do excel 
+2020-01-16 13:10:25,912 INFO  [Classe de pesquisa] clica pra pesquisar o conteudo digitado 
+2020-01-16 13:10:25,918 INFO  [Classe de pesquisa] da um tempo 
+2020-01-16 13:10:27,943 INFO  [Classe de pesquisa] escolher um produto especifico 
+2020-01-16 13:10:28,781 INFO  [Classe de pesquisa] sai do teste 

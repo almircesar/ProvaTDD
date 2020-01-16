@@ -49,4 +49,11 @@ public static WebElement escolhermouser(WebDriver driver) {
 		return element;
 
 	}
+	public static WebElement HeadPhones(WebDriver driver) {
+		element = driver.findElement(By.id("headphonesImg"));
+		return element;
+	
+}
+	
+	
 }
