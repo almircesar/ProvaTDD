@@ -5,9 +5,9 @@
     <classes>
       <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.TestePesquisa">
         <methods>
+          <include name="PesquisaErro"/>
           <include name="iniciaNavegadorESite"/>
-          <include name="Pesquisan"/>
-          <include name="encerraNavegador"/>
+          <include name="Pesquisa"/>
         </methods>
       </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.TestePesquisa -->
     </classes>

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Register_Page;
 
-public class Register_Action {
+public class Registro_Action {
 	public static void cadastroinf(WebDriver driver) {
 		
 		Register_Page.username(driver).sendKeys("ipsax");

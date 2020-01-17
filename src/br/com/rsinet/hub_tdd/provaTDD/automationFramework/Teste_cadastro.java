@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import br.com.rsinet.hub_tdd.provaTDD.pageActions.Home_Action;
-import br.com.rsinet.hub_tdd.provaTDD.pageActions.Register_Action;
+import br.com.rsinet.hub_tdd.provaTDD.pageActions.Registro_Action;
 
 public class Teste_cadastro {
 	
@@ -31,14 +31,14 @@ public class Teste_cadastro {
        Reporter.log("ChromeDriver fechado com sucesso.");
        Reporter.log("Teste concluído com sucesso");
     }
-
+    
 	@Test
 	
 	public void loga() {
 
 	Home_Action.logar(driver);
 
-	Register_Action.cadastroinf(driver);
+	Registro_Action.cadastroinf(driver);
 	
 	Reporter.log("cadastrado com sucesso");
 	
