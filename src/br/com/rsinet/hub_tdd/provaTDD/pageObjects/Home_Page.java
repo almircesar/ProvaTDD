@@ -54,6 +54,16 @@ public static WebElement escolhermouser(WebDriver driver) {
 		return element;
 	
 }
+	public static WebElement notebookFolio(WebDriver driver) {
+		element = driver.findElement(By.linkText("HP ELITEBOOK FOLIO"));
+		return element;
+		
+	}
+	public static WebElement notebookElement(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"details_10\"]"));
+		return element;
+	
+}
 
  	
 	

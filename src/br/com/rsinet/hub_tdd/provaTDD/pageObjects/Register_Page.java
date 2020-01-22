@@ -84,4 +84,12 @@ public static WebElement regiser(WebDriver driver) {
 	return element;
 
 }
+public static WebElement caracteresAMais(WebDriver driver) {
+	element = driver.findElement(By.linkText("Use maximum 15 character"));
+	return element;
+	
+	
+	
+	
+}
 }
