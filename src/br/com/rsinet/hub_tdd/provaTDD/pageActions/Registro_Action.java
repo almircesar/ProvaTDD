@@ -13,7 +13,7 @@ public class Registro_Action {
 	
 	public static void cadastroCerto(WebDriver driver) {
 
-		Register_Page.username(driver).sendKeys("Reaap");
+		Register_Page.username(driver).sendKeys("alana1");
 		Register_Page.email(driver).sendKeys("lilala32@hotmail.com");
 		Register_Page.senha(driver).sendKeys("Garrafa88A");
 		Register_Page.confirmacaoSenha(driver).sendKeys("Garrafa88A");

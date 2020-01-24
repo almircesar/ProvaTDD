@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.Produto_Home">
+      <class name="br.com.rsinet.hub_tdd.provaTDD.automationFramework.Teste_cadastro">
         <methods>
-          <include name="ProdutoErrado"/>
+          <include name="logaerro"/>
+          <include name="loga"/>
         </methods>
-      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.Produto_Home -->
+      </class> <!-- br.com.rsinet.hub_tdd.provaTDD.automationFramework.Teste_cadastro -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

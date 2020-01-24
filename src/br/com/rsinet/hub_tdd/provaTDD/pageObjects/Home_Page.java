@@ -26,12 +26,6 @@ public class Home_Page {
 
 	}
 
-	public static WebElement escolhertablet(WebDriver driver) {
-		element = driver.findElement(By.linkText("LOGITECH G502 PROTEUS CORE"));
-		return element;
-
-	}
-
 public static WebElement escolhermouser(WebDriver driver) {
 	element = driver.findElement(By.linkText("Logitech G502 Proteus Core"));
 	return element;

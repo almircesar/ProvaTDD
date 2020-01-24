@@ -23,7 +23,6 @@ public class TestePesquisa {
 
 	private static WebDriver driver = null;
 
-
 	public void iniciaNavegadorESite() throws Exception {
 		DOMConfigurator.configure("log4j.xml");
 		Log.info("inicia o driver,abre o site e maximiza a tela");
@@ -32,7 +31,7 @@ public class TestePesquisa {
 		driver.manage().window().maximize();
 		driver.get("https://www.advantageonlineshopping.com/");
 		ExcelUtils.setExcelFile(constant.Path_TestData + constant.File_TestData, "Planilha1");
-		
+
 	}
 
 	public void encerraNavegador() {
@@ -41,33 +40,38 @@ public class TestePesquisa {
 		Reporter.log("ChromeDriver fechado com sucesso.");
 		Reporter.log("Teste concluído com sucesso");
 	}
-	
+
 	@Test(priority = 0)
 	public void Pesquisa() throws Exception {
-		
+
 		iniciaNavegadorESite();
-		
+
 		Pesquisa_Action.PesquisaCerta(driver);
+
+		assertEquals(ItemsPosPesquisa_Page.TextoEsperado(driver).getText()
+				.contains(ExcelUtils.getCellData(2, 0).toUpperCase()), true);
 		
-		assertEquals(ItemsPosPesquisa_Page.TextoEsperado(driver).getText().contains(ExcelUtils.getCellData(2, 0).toUpperCase()), true);
 		Screenshot.captureScreenShot(driver);
 		Log.info("Tira o print");
-		
-		encerraNavegador();
-		
-	}
-	@Test(priority = 1)
-	public void PesquisaErro() throws Exception {
-		
-		iniciaNavegadorESite();
-		
-		Pesquisa_Action.procurarerro(driver);
-		
-		assertEquals(ItemsPosPesquisa_Page.TextoEsperadocadeira(driver).getText().contains(ExcelUtils.getCellData(4, 0).toUpperCase()), true);
-		Screenshot.captureScreenShot(driver);
-		Log.info("Tira o print");
-		
+
 		encerraNavegador();
 
-}
+	}
+
+	@Test(priority = 1)
+	public void PesquisaErro() throws Exception {
+
+		iniciaNavegadorESite();
+
+		Pesquisa_Action.procurarerro(driver);
+
+		assertEquals(ItemsPosPesquisa_Page.TextoEsperadocadeira(driver).getText()
+				.contains(ExcelUtils.getCellData(4, 0).toUpperCase()), true);
+		
+		Screenshot.captureScreenShot(driver);
+		Log.info("Tira o print");
+
+		encerraNavegador();
+
+	}
 }

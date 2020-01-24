@@ -2,6 +2,7 @@ package br.com.rsinet.hub_tdd.provaTDD.automationFramework;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,11 +11,14 @@ import org.testng.AssertJUnit;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import br.com.rsinet.hub_tdd.provaTDD.Utils.Screenshot;
 import br.com.rsinet.hub_tdd.provaTDD.pageActions.Home_Action;
 import br.com.rsinet.hub_tdd.provaTDD.pageActions.Registro_Action;
 import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Home_Page;
 
 public class Teste_cadastro {
+	
+	private static Logger Log = Logger.getLogger("Classe de Cadastro");
 
 	private static WebDriver driver = null;
 
@@ -49,6 +53,12 @@ public class Teste_cadastro {
 		wait.until(ExpectedConditions.visibilityOf(Home_Page.HeadPhones(driver)));
 
 		AssertJUnit.assertEquals(driver.getCurrentUrl(), "https://www.advantageonlineshopping.com/#/");
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		Screenshot.captureScreenShot(driver);
+		Log.info("Tira o print");
+		
 		encerraNavegador();
 	}
 
@@ -69,6 +79,13 @@ public class Teste_cadastro {
 //		wait.until(ExpectedConditions.visibilityOf(Home_Page.HeadPhones(driver)));
 
 		AssertJUnit.assertEquals(driver.getCurrentUrl(), "https://www.advantageonlineshopping.com/#/register");
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		
+		Screenshot.captureScreenShot(driver);
+		Log.info("Tira o print");
+		
 		encerraNavegador();
 	}
 

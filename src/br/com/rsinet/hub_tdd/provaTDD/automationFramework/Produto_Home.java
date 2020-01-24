@@ -1,10 +1,10 @@
 package br.com.rsinet.hub_tdd.provaTDD.automationFramework;
 
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertNotEquals;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -13,11 +13,13 @@ import org.testng.AssertJUnit;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import br.com.rsinet.hub_tdd.provaTDD.Utils.Screenshot;
 import br.com.rsinet.hub_tdd.provaTDD.pageActions.PesquisaItemHome_Action;
-import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Home_Page;
 import br.com.rsinet.hub_tdd.provaTDD.pageObjects.ItemsPosPesquisa_Page;
 
 public class Produto_Home {
+	
+	private static Logger Log = Logger.getLogger("Classe de ProdutoHome");
 
 	private static WebDriver driver = null;
 
@@ -36,24 +38,29 @@ public class Produto_Home {
 		Reporter.log("Teste concluído com sucesso");
 	}
 
-			@Test
-			public void ClicaProd() throws Exception {
-				
-			iniciaNavegadorESite();
-			
-			PesquisaItemHome_Action.ItemHome(driver);
-			Reporter.log("clicando no item da home");
-			
-			// espera o elemento headphone aparecer na pagina para rodar o assert
-			
-			WebDriverWait wait = new WebDriverWait(driver, 5);
-			wait.until(ExpectedConditions.visibilityOf(ItemsPosPesquisa_Page.BeatsStudio(driver)));
-			
-			AssertJUnit.assertEquals(driver.getCurrentUrl(), "https://www.advantageonlineshopping.com/#/category/Headphones/2");
-			
-			encerraNavegador();
-	
+	@Test
+	public void ClicaProd() throws Exception {
+
+		iniciaNavegadorESite();
+
+		PesquisaItemHome_Action.ItemHome(driver);
+		Reporter.log("clicando no item da home");
+
+		// espera o elemento headphone aparecer na pagina para rodar o assert
+
+		WebDriverWait wait = new WebDriverWait(driver, 5);
+		wait.until(ExpectedConditions.visibilityOf(ItemsPosPesquisa_Page.BeatsStudio(driver)));
+
+		AssertJUnit.assertEquals(driver.getCurrentUrl(),
+				"https://www.advantageonlineshopping.com/#/category/Headphones/2");
+		
+		Screenshot.captureScreenShot(driver);
+		Log.info("Tira o print");
+
+		encerraNavegador();
+
 	}
+
 	@Test
 	public void ProdutoErrado() throws Exception {
 
@@ -66,6 +73,9 @@ public class Produto_Home {
 		wait.until(ExpectedConditions.visibilityOf(ItemsPosPesquisa_Page.AdicionarAoCarrinho(driver)));
 
 		assertEquals(ItemsPosPesquisa_Page.bookchrome(driver).getText().contains("Folio"), false);
+		
+		Screenshot.captureScreenShot(driver);
+		Log.info("Tira o print");
 
 		encerraNavegador();
 
