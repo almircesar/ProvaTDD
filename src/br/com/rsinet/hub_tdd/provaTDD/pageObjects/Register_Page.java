@@ -79,7 +79,7 @@ public static WebElement codpostal(WebDriver driver) {
 	return element;
 
 }
-public static WebElement regiser(WebDriver driver) {
+public static WebElement register(WebDriver driver) {
 	element = driver.findElement(By.id("register_btnundefined"));
 	return element;
 

@@ -1,4 +1,4 @@
-package br.com.rsinet.hub_tdd.provaTDD.pageActions;
+package br.com.rsinet.hub_tdd.provaTDD.appModule;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;

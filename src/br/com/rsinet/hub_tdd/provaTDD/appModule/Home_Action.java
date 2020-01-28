@@ -1,4 +1,4 @@
-package br.com.rsinet.hub_tdd.provaTDD.pageActions;
+package br.com.rsinet.hub_tdd.provaTDD.appModule;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;

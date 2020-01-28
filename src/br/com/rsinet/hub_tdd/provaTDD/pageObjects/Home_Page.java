@@ -58,6 +58,11 @@ public static WebElement escolhermouser(WebDriver driver) {
 		return element;
 	
 }
+	public static WebElement MiceElement(WebDriver driver) {
+		element = driver.findElement(By.id("miceImg"));
+		return element;
+		
+	}
 
  	
 	

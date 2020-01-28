@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import br.com.rsinet.hub_tdd.provaTDD.Utils.ExcelUtils;
 import br.com.rsinet.hub_tdd.provaTDD.Utils.Screenshot;
 import br.com.rsinet.hub_tdd.provaTDD.Utils.constant;
-import br.com.rsinet.hub_tdd.provaTDD.pageActions.Pesquisa_Action;
+import br.com.rsinet.hub_tdd.provaTDD.appModule.Pesquisa_Action;
 import br.com.rsinet.hub_tdd.provaTDD.pageObjects.ItemsPosPesquisa_Page;
 
 public class TestePesquisa {
