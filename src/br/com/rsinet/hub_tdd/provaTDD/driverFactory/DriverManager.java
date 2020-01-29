@@ -2,12 +2,15 @@ package br.com.rsinet.hub_tdd.provaTDD.driverFactory;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverManager {
 
 	public static WebDriver ComecaChrome() {
+		
+		DOMConfigurator.configure("log4j.xml");
 		System.setProperty("webdriver.chrome.drive", "C:\\Users\\almir.damiao\\Desktop\\chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

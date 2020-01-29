@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class ItemsPosPesquisa_Page {
+	
 
 	private static WebElement element = null;
 
@@ -46,4 +47,11 @@ public class ItemsPosPesquisa_Page {
 	
 	
 }
+	
+	public static WebElement cadeiraInexistente(WebDriver driver) {
+		element = driver.findElement(By.xpath("//*[@id=\"searchPage\"]/div[3]/div/label/span"));
+		return element;
+		
+		
+	}
 }

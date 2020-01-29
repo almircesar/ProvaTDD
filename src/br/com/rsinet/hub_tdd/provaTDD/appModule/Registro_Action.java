@@ -13,7 +13,7 @@ public class Registro_Action {
 	
 	public static void cadastroCerto(WebDriver driver) {
 
-		Register_Page.username(driver).sendKeys("la0rrt1");
+		Register_Page.username(driver).sendKeys("aluiiend");
 		Register_Page.email(driver).sendKeys("lilala32@hotmail.com");
 		Register_Page.senha(driver).sendKeys("Garrafa88A");
 		Register_Page.confirmacaoSenha(driver).sendKeys("Garrafa88A");
@@ -27,6 +27,7 @@ public class Registro_Action {
 		Register_Page.codpostal(driver).sendKeys("05539445");
 		Register_Page.agree(driver).click();
 		Register_Page.register(driver).click();
+		
 
 			}
 

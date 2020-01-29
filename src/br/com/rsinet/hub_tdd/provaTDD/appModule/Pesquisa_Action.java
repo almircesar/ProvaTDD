@@ -10,7 +10,7 @@ import br.com.rsinet.hub_tdd.provaTDD.pageObjects.Home_Page;
 
 public class Pesquisa_Action {
 
-	private static Logger Log = Logger.getLogger("Classe de pesquisa");
+	private static Logger Log = Logger.getLogger("ClasseDePesquisa");
 
 	public static void procurarerro(WebDriver driver) throws Exception {
         
